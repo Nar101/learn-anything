@@ -1,0 +1,91 @@
+version: 1
+skill: learn-anything
+
+domain:
+  name: ""
+  scope: ""
+  target_performance: ""
+  target_context: ""
+  target_mastery_level: transferable
+  out_of_scope: []
+
+route_design:
+  design_principle: shortest_effective_path
+  starting_point_summary: ""
+  estimated_stages: null
+  route_rationale: ""
+
+prerequisites:
+  - id: prereq-001
+    name: ""
+    required: true
+    current_status: unknown
+    diagnostic_task: ""
+
+stages:
+  - id: stage-001
+    name: ""
+    purpose: ""
+    exit_evidence: ""
+    nodes:
+      - id: node-001
+        name: ""
+        knowledge_type: concept
+        importance: core
+        prerequisites: []
+        learning_objective: ""
+        representative_task: ""
+        common_misconceptions: []
+        target_status: independent
+        preferred_learning_activities: []
+
+representative_tasks:
+  - id: task-001
+    description: ""
+    realism: low
+    nodes_tested: []
+    success_criteria: []
+
+common_misconceptions:
+  - id: misconception-001
+    description: ""
+    affected_nodes: []
+    diagnostic_signal: ""
+    correction_activity: ""
+
+capstone:
+  description: ""
+  deliverable: ""
+  context: ""
+  criteria: []
+  external_feedback_required: false
+  feedback_source: null
+
+transfer_plan:
+  near_transfer_tasks: []
+  far_transfer_tasks: []
+  boundary_questions: []
+
+source_plan:
+  mode: source_augmented
+  core_sources: []
+  facts_requiring_current_verification: []
+  unresolved_conflicts: []
+
+adaptation_rules:
+  skip_when: "已有独立表现证据"
+  remediate_when: "核心误区仍活跃或迁移失败"
+  increase_difficulty_when: "连续独立成功且解释依据稳定"
+  reduce_load_when: "同一上游步骤连续失败或一次包含过多新元素"
+
+progress:
+  current_stage_id: stage-001
+  completed_stage_ids: []
+  blocked_by: []
+  next_map_review: null
+
+provenance:
+  created_at: null
+  updated_at: null
+  learner_state_path: null
+  notes: []

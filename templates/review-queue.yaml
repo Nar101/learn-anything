@@ -1,0 +1,101 @@
+version: 2
+skill: learn-anything
+
+settings:
+  default_intervals_days: [1, 3, 7, 14, 30]
+  scheduling_rule: adaptive
+  start_with_retrieval: true
+  allow_state_downgrade: true
+  automation_enabled: false
+
+immediate_reviews:
+  - id: immediate-L01
+    lesson_id: L01
+    review_type: immediate
+    retrieval_before_summary: true
+    retrieval_prompt: ""
+    transfer_task: ""
+    result: not_attempted
+    misconceptions_reactivated: []
+    next_action: reinforce
+    completed_at: null
+
+queue:
+  - id: review-001
+    node_id: node-001
+    node_name: ""
+    knowledge_type: concept
+    importance: core
+    due_at: null
+    interval_days: 1
+    reason: new_learning
+    target_status: independent
+    retrieval_prompt: ""
+    expected_evidence: ""
+    answer_key_or_rubric: ""
+    transfer_variant: ""
+    last_result: not_attempted
+    last_hint_level: null
+    error_count: 0
+    confidence_before: null
+    confidence_after: null
+    status: pending
+
+history:
+  - timestamp: null
+    review_id: review-001
+    node_id: node-001
+    prompt_used: ""
+    result: not_attempted
+    hint_level: null
+    observed_errors: []
+    mastery_change:
+      from: unknown
+      to: unknown
+    next_interval_days: null
+    next_due_at: null
+    scheduling_rationale: ""
+
+scheduling_rules:
+  new_or_fragile:
+    default_next_days: 1
+    condition: "刚学完、存在活跃误区或依赖高提示"
+  correct_but_hesitant:
+    default_next_days: 3
+    condition: "答案正确但信心低、解释不稳或速度明显慢"
+  independent_success:
+    default_next_days: 7
+    condition: "无关键提示完成典型任务"
+  transfer_success:
+    default_next_days: 14
+    condition: "新情境中正确使用并说明边界"
+  durable_success:
+    default_next_days: 30
+    condition: "延迟后仍稳定提取和应用"
+  failure:
+    default_next_days: 1
+    condition: "回忆失败、核心误区复发或需要高提示"
+    action: "降低状态或标记待巩固，先纠正再排期"
+
+session_opening:
+  due_item_limit: 3
+  priority_order:
+    - overdue_core
+    - active_misconception
+    - due_core
+    - due_supporting
+  rule: "先让学习者回忆或应用，再显示旧笔记和答案"
+
+session_closing:
+  report_fields:
+    - reviewed_items
+    - retrieval_results
+    - misconceptions_reactivated
+    - mastery_changes
+    - next_due_items
+
+provenance:
+  created_at: null
+  updated_at: null
+  learner_state_path: null
+  notes: []

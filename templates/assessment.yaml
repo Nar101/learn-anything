@@ -1,0 +1,46 @@
+version: 4
+assessments:
+  - assessment_id: A-L01-01
+    lesson_id: L01
+    part_id: L01-P01
+    material_version: 1
+    material_path: "../lessons/L01-title/parts/01-part.md"
+    source_claims: []
+    learning_objective: ""
+    target_node_id: node-001
+    question_type: open_response
+    question: ""
+    options: []
+    correct_answer: ""
+    acceptable_variants: []
+    rationale: ""
+    grading_rule:
+      correct: []
+      partially_correct: []
+      incorrect: []
+      ungradable: []
+    common_wrong_answers: []
+    hint_ladder:
+      - level: 1
+        hint: ""
+      - level: 2
+        hint: ""
+      - level: 3
+        hint: ""
+    preflight:
+      target_node_is_explicit: false
+      source_support_is_sufficient: false
+      answer_or_rubric_frozen: false
+      options_are_mutually_exclusive: false
+      question_is_realistic: false
+      learner_has_required_prerequisites: false
+    invalidation:
+      invalidated: false
+      reason_type: null
+      reason: ""
+      prior_grading_withdrawn: false
+      mastery_evidence_removed: false
+      replacement_assessment_id: null
+    frozen_before_delivery: false
+    frozen_at: ""
+    status: draft

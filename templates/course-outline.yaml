@@ -1,0 +1,61 @@
+version: 3
+skill: learn-anything
+
+course:
+  course_id: ""
+  title: ""
+  learner_goal: ""
+  application_context: ""
+  starting_point: ""
+  constraints: []
+  final_mastery_evidence: []
+  created_at: ""
+  updated_at: ""
+  status: draft
+
+route:
+  version: 1
+  status: provisional
+  confirmed_scope:
+    - learner_goal
+    - application_context
+    - final_mastery_evidence
+    - active_lesson
+  future_lessons_are_provisional: true
+  generation_policy: current_part_only
+
+lessons:
+  - lesson_id: L01
+    order: 1
+    title: ""
+    why_now: ""
+    learning_objective: ""
+    prerequisites: []
+    knowledge_types: []
+    lesson_plan_path: null
+    current_material_path: null
+    source_ids: []
+    mastery_evidence: []
+    assessment_ids: []
+    route_status: active
+    material_status: not_generated
+    delivery_status: not_started
+    mastery_status: unknown
+  - lesson_id: L02
+    order: 2
+    title: ""
+    why_now: ""
+    learning_objective: ""
+    prerequisites: [L01]
+    knowledge_types: []
+    lesson_plan_path: null
+    current_material_path: null
+    source_ids: []
+    mastery_evidence: []
+    assessment_ids: []
+    route_status: provisional
+    material_status: not_generated
+    delivery_status: not_started
+    mastery_status: unknown
+
+course_adjustments: []

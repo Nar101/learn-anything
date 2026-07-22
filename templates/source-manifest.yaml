@@ -1,0 +1,80 @@
+version: 3
+course_id: ""
+verified_at: ""
+
+research:
+  source_mode: agent_researched
+  learning_question: ""
+  required_claim_types: []
+  date_or_version_scope: ""
+  preferred_source_types:
+    - official_doc
+    - standard
+    - primary_research
+    - textbook
+  out_of_scope: ""
+  search_queries: []
+  unresolved_questions: []
+  candidate_collection:
+    delegated: false
+    agent_role: learning_researcher
+    final_source_approval: main_tutor
+
+sources:
+  - source_id: S01
+    title: ""
+    source_type: official_doc
+    author_or_org: ""
+    origin:
+      location: ""
+      object_id: null
+      access_method: web
+      original_file_path: null
+    ingestion:
+      status: ready
+      available_scope: ""
+      current_lesson_scope: ""
+      page_ranges: []
+      time_ranges: []
+      transcript_available: null
+      parsed_at: null
+    publication_or_version_date: ""
+    claim_scope: []
+    confidence: high
+    known_limits: []
+    used_in_lessons: []
+    used_in_parts: []
+
+verified_syntheses:
+  - synthesis_id: V01
+    claim: ""
+    source_ids: []
+    agreement_or_conflict: ""
+    confidence: ""
+    known_limits: []
+
+claim_source_matrix:
+  - claim_id: C01
+    claim: ""
+    claim_type: definition
+    source_ids: []
+    evidence_locators: []
+    support: insufficient
+    limits: []
+    allowed_use: blocked
+
+review_log:
+  - part_id: L01-P01
+    source_check:
+      status: pending
+      checked_at: null
+      evidence: []
+    fact_check:
+      status: pending
+      checked_at: null
+      evidence: []
+    pedagogy_check:
+      status: pending
+      checked_at: null
+      evidence: []
+    revisions: []

@@ -1,0 +1,124 @@
+version: 2
+skill: learn-anything
+
+session:
+  id: session-001
+  date: null
+  intent: understand
+  timebox_minutes: null
+  learner_state_path: null
+  domain_map_path: null
+
+state_snapshot:
+  current_stage_id: null
+  current_node_id: null
+  current_status: unknown
+  active_misconceptions: []
+  reviews_due: []
+  user_energy_or_constraints: ""
+
+objective:
+  learner_will_be_able_to: ""
+  target_status: independent
+  evidence_required: ""
+  why_this_now: ""
+
+node:
+  id: node-001
+  name: ""
+  knowledge_type: concept
+  prerequisites_checked: []
+  expected_difficulty: medium
+
+activity_sequence:
+  - order: 1
+    phase: recall_or_attempt
+    activity: ""
+    evidence_to_observe: ""
+    skip_condition: "完全新手且任务复杂，需要先看示例"
+  - order: 2
+    phase: minimum_explanation
+    activity: ""
+    key_points: []
+    load_limit: "一次只处理一个主要障碍"
+  - order: 3
+    phase: example_or_demonstration
+    activity: ""
+    fading_plan: ""
+  - order: 4
+    phase: active_application
+    activity: ""
+    learner_output: ""
+  - order: 5
+    phase: feedback_and_retry
+    rubric_or_answer_key: ""
+    initial_hint_level: L0
+    retry_required: true
+  - order: 6
+    phase: transfer
+    activity: ""
+    changed_condition: ""
+  - order: 7
+    phase: schedule_review
+    review_action: ""
+
+assessment:
+  answer_key_or_rubric:
+    required_elements: []
+    acceptable_variants: []
+    common_errors: []
+    critical_failure: ""
+  confidence_check:
+    enabled: false
+    prompt: ""
+  mastery_decision_rule: ""
+  preflight_required: true
+
+promotion_gate:
+  current_node: node-001
+  task: ""
+  grading_result: ungradable
+  hint_level: null
+  criteria_met: []
+  criteria_unmet: []
+  active_misconceptions: []
+  historical_highest_status: unknown
+  current_status: unknown
+  advance_allowed: false
+  promotion_blockers: []
+
+immediate_review:
+  review_type: immediate
+  retrieval_before_summary: true
+  lesson_summary_shown_after_retrieval: false
+  retrieval_prompt: ""
+  transfer_task: ""
+  result: not_attempted
+  misconceptions_reactivated: []
+  next_action: reinforce
+
+adaptation:
+  if_correct_with_no_hint: "进入迁移或提高复杂度"
+  if_correct_with_high_hint: "保持 guided，降低提示后再试"
+  if_partially_correct: "保留正确部分，修第一个关键断点"
+  if_same_error_repeats: "检查前置知识、负荷和错误模型"
+  if_transfer_fails: "回到最早薄弱节点，不推进新内容"
+  if_user_requests_direct_answer: "直接回答，再用一个小变式检查理解"
+  if_user_is_fatigued: "缩小任务，但保留一次主动输出"
+
+closing_contract:
+  capability_formed: ""
+  unstable_point: ""
+  evidence_created: ""
+  next_minimum_action: ""
+  review_due: null
+
+outcome:
+  completed: false
+  actual_hint_level: null
+  learner_output_summary: ""
+  mastery_before: unknown
+  mastery_after: unknown
+  evidence_log_entry: null
+  review_queue_updates: []
+  notes: []

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Learn Anything｜自适应学习 Agent"
+  short_description: "Track proof of mastery, not content completion"
+  default_prompt: "Use $learn-anything to turn my learning goal and optional materials into a source-grounded adaptive course. For every lesson part, first show where we are, how it connects, what the source teaches, and what I should be able to do; then teach before questioning me. Keep source claims, tutor synthesis, and application hypotheses separate. Freeze and preflight each assessment before I respond, require evidence before mastery promotion, and finish every lesson with retrieval and transfer before moving on."

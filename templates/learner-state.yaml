@@ -1,0 +1,135 @@
+version: 3
+skill: learn-anything
+
+learner:
+  name: null
+  preferences:
+    language: zh-CN
+    explanation_style: concise
+    pace: adaptive
+    examples_from_user_context: true
+  constraints: []
+
+mastery_contract:
+  learning_goal: ""
+  application_context: ""
+  starting_point:
+    self_report: ""
+    diagnostic_evidence: []
+  time_budget: null
+  deadline: null
+  target_mastery_level: transferable
+  mastery_evidence:
+    - ""
+  out_of_scope: []
+  status: provisional
+  confirmed_by_user: false
+
+current_position:
+  domain_map_path: null
+  route_version: 1
+  current_stage_id: null
+  current_lesson_plan_path: null
+  current_part_id: null
+  current_part_path: null
+  current_node_id: null
+  next_action: ""
+  blockers: []
+
+content_progress:
+  current_lesson_id: null
+  current_part_id: null
+  parts_ready: 0
+  parts_planned: 0
+  lessons_delivered: 0
+  lessons_total_provisional: 0
+  future_material_generation: disabled
+  legacy_prebuilt_ignored: []
+
+nodes:
+  - id: node-001
+    name: ""
+    knowledge_type: concept
+    importance: core
+    prerequisites: []
+    target_status: independent
+    historical_highest_status: unknown
+    current_status: unknown
+    current_evidence: []
+    active_misconceptions: []
+    promotion_blockers: []
+    advance_allowed: false
+    status: unknown
+    evidence: []
+    misconceptions: []
+    hint_level_last_used: null
+    confidence:
+      self_rating: null
+      calibration: unknown
+    attempts:
+      total: 0
+      independent_successes: 0
+      transfer_successes: 0
+    last_practiced: null
+    next_review: null
+    notes: ""
+
+evidence_log:
+  - timestamp: null
+    node_id: node-001
+    task: ""
+    context: diagnostic
+    result: not_attempted
+    hint_level: null
+    observed_strengths: []
+    observed_errors: []
+    mastery_change:
+      from: unknown
+      to: unknown
+    rationale: ""
+    promotion_evidence:
+      grading_result: ungradable
+      criteria_met: []
+      criteria_unmet: []
+      active_misconceptions: []
+      historical_highest_status: unknown
+      current_status: unknown
+      advance_allowed: false
+      promotion_blockers: []
+
+misconception_log:
+  - id: misconception-001
+    node_id: node-001
+    description: ""
+    evidence: ""
+    status: active
+    correction_strategy: ""
+    last_checked: null
+
+review:
+  queue_path: null
+  due_now: []
+  overdue: []
+
+sessions:
+  - id: session-001
+    date: null
+    objective: ""
+    evidence_created: []
+    state_changes: []
+    unresolved: []
+    next_action: ""
+
+overall_progress:
+  status: in_progress
+  strongest_evidence: ""
+  weakest_core_node: null
+  immediate_mastery_verified: false
+  transfer_verified: false
+  durable_mastery_verified: false
+
+provenance:
+  created_at: null
+  updated_at: null
+  sources: []
+  state_limitations: []

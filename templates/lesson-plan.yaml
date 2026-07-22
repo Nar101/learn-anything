@@ -1,0 +1,154 @@
+version: 4
+skill: learn-anything
+
+lesson:
+  lesson_id: L01
+  title: ""
+  route_version: 1
+  lesson_version: 1
+  status: draft
+  learning_objective: ""
+  mastery_evidence: ""
+  throughline_case: ""
+  source_ids: []
+
+teaching_layers:
+  source_layer:
+    author_claims: []
+    source_location: ""
+  tutor_synthesis:
+    claims: []
+    confidence: ""
+  application_layer:
+    user_context: ""
+    working_hypothesis: ""
+    evidence_needed: []
+
+generation_policy:
+  mode: current_part_only
+  ungenerated_parts_are_editable: true
+  default_part_length_zh_chars: "1800-3500"
+  narrative_required: true
+  table_cannot_replace_explanation: true
+  one_active_output_per_part: true
+
+source_policy:
+  mode: agent_researched
+  user_material_required: false
+  research_scope: current_part_only
+  claim_source_matrix_required: true
+  final_source_approval: main_tutor
+
+cost_policy:
+  mode: balanced
+  deterministic_tools_first: true
+  researcher_role: learning_researcher
+  max_research_workers: 1
+  parallel_research: false
+  fallback: main_tutor_scoped_research
+  record_usage: true
+
+parts:
+  - part_id: L01-P01
+    order: 1
+    title: ""
+    objective: ""
+    material_path: null
+    status: planned
+    source_ids: []
+    active_output: ""
+    navigation:
+      position: "L01-P01 / 当前课第 1 段"
+      lesson_question: ""
+      previous_part_resolved: "这是本课起点"
+      why_this_part_now: ""
+      source_focus: ""
+      success_criterion: ""
+    source_layer:
+      author_claims: []
+      source_location: ""
+    tutor_synthesis:
+      claims: []
+      confidence: ""
+    application_layer:
+      user_context: ""
+      working_hypothesis: ""
+      evidence_needed: []
+    review:
+      source_check: pending
+      fact_check: pending
+      pedagogy_check: pending
+  - part_id: L01-P02
+    order: 2
+    title: ""
+    objective: ""
+    material_path: null
+    status: planned
+    source_ids: []
+    active_output: ""
+    navigation:
+      position: "L01-P02 / 当前课第 2 段"
+      lesson_question: ""
+      previous_part_resolved: ""
+      why_this_part_now: ""
+      source_focus: ""
+      success_criterion: ""
+    source_layer:
+      author_claims: []
+      source_location: ""
+    tutor_synthesis:
+      claims: []
+      confidence: ""
+    application_layer:
+      user_context: ""
+      working_hypothesis: ""
+      evidence_needed: []
+    review:
+      source_check: pending
+      fact_check: pending
+      pedagogy_check: pending
+
+assessment:
+  path: "../../assessments/01-title.yaml"
+  frozen_before_delivery: false
+  delivered_assessment_ids: []
+  pending_assessment_ids: []
+
+lesson_completion_gate:
+  immediate_review_completed: false
+  retrieval_before_summary: true
+  transfer_task_completed: false
+  core_nodes_ready: false
+  next_lesson_generation_allowed: false
+  blockers: []
+
+current_position:
+  part_id: L01-P01
+  part_status: planned
+  next_action: ""
+
+quality_gate:
+  benchmark: "老师式分段长文"
+  passed: false
+  evidence: []
+  current_part_id: L01-P01
+  source_check:
+    status: pending
+    evidence: []
+  fact_check:
+    status: pending
+    evidence: []
+  pedagogy_check:
+    status: pending
+    evidence: []
+
+usage:
+  main_tutor: {}
+  research_workers: []
+  retries: 0
+  total_cost_known: false
+
+provenance:
+  created_at: null
+  updated_at: null
+  supersedes: null
