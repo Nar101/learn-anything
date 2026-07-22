@@ -5,7 +5,7 @@ description: >
   A source-grounded adaptive tutor that tracks proof of mastery rather than content completion. Use it to learn a topic systematically, build a course from PDFs, webpages, transcripts or notes, practice retrieval and transfer, resume a long-running course, or verify whether the learner can recall and apply what they studied. When no materials are provided, it researches authoritative sources for the current lesson. It generates one lesson part at a time, freezes answers or rubrics before the learner responds, and records guided, independent, transferable and durable evidence separately. Also trigger for Chinese requests such as “带我学”“系统学习”“教会我”“陪我练习”“检查我是否真的掌握”“继续上次学习”. Do not start the full course runtime for simple factual questions or one-off explanations.
 ---
 
-# Learn Anything｜通用自适应学习 Agent
+# Learn Anything by Nar｜通用自适应学习 Skill
 
 ## 核心目标
 

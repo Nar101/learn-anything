@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use Learn Anything in your work, please cite the original project and creator."
+title: "Learn Anything by Nar"
+type: software
+authors:
+  - name: "Nar / 那不然"
+    alias: "Nar101"
+url: "https://github.com/Nar101/learn-anything"
+repository-code: "https://github.com/Nar101/learn-anything"
+license: MIT
+version: 1.0.2
+date-released: 2026-07-22

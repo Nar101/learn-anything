@@ -1,8 +1,14 @@
-# Learn Anything
+# Learn Anything · by Nar
 
 > **让 AI 真正带你学会，而不只是讲给你听。**
 
 从学习路线、逐课讲解，到练习、纠错、迁移和复习，Learn Anything 会根据你的目标与表现持续调整，带你把一个新主题真正学会。
+
+Learn Anything 是一个运行在 Codex、Claude Code、Cursor 等 Agent 环境中的**自适应学习 Skill**，不是独立 Agent 或应用。
+
+**Created by [Nar / 那不然](https://github.com/Nar101)** · Official repository: [`Nar101/learn-anything`](https://github.com/Nar101/learn-anything)
+
+> Learn Anything 最初由 **Nar / 那不然** 设计并开源。欢迎在 MIT License 下使用、修改和再发布；再分发本项目的全部或实质性部分时，请保留原始版权声明与许可证。
 
 ---
 
@@ -135,9 +141,11 @@ python3 -B scripts/validate_course.py /path/to/course
 
 ## 作者
 
-**Nar / 那不然**
+**[Nar / 那不然](https://github.com/Nar101)**
 
 我在持续实践一件事：如何让 AI 从一次性问答，走向真正参与学习、思考和工作。Learn Anything 是这项实践中的一个开源作品。
+
+本项目的唯一官方源仓库是 [`Nar101/learn-anything`](https://github.com/Nar101/learn-anything)。如果你在其他仓库、网站或安装包中看到 Learn Anything，可以回到这里确认原始作者和最新版本。
 
 ## License
 
